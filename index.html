@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Seccion del header -->
     <header>
         <div class="container">
             <div class="header-content">
@@ -24,9 +24,9 @@
         </div>
     </header>
 
-    <!-- Main Content -->
+    
     <div class="container">
-        <!-- Carousel Section -->
+        <!-- Seccion del carrusel -->
         <div class="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item" style="background-image: url('img/Horario.png')">
@@ -55,13 +55,13 @@
             </div>
         </div>
 
-        <!-- Schedule Highlight -->
+        <!-- Horario -->
         <div class="highlight">
             <h2>Recuerda nuestro horario</h2>
             <p>Lunes a Domingo: 10:00 a 20:00</p>
         </div>
 
-        <!-- Tiendas Section -->
+        <!-- Tiendas  -->
         <h2 class="section-title">Tiendas</h2>
         <div class="main-content">
             <div class="card">
@@ -85,7 +85,7 @@
             </div>
         </div>
 
-        <!-- Panoramas Section -->
+        <!-- Panoramas seccion -->
         <h2 class="section-title">Panoramas</h2>
         <div class="main-content">
             <div class="card">
@@ -129,7 +129,7 @@
             </div>
         </div>
 
-        <!-- Ubicación Tiendas Section -->
+        <!-- Ubicación Tiendas  -->
         <h2 class="section-title">Ubicación Tiendas</h2>
         <div class="banner-section">
             <img src="img/ubi_tiendas.png" alt="Mapa de Tiendas" class="banner-img">
@@ -199,7 +199,7 @@
     </footer>
 
     <script>
-        // Carousel functionality
+        // funcionalidades del carrusel
         document.addEventListener('DOMContentLoaded', function() {
             const carouselInner = document.querySelector('.carousel-inner');
             const carouselItems = document.querySelectorAll('.carousel-item');
@@ -209,7 +209,7 @@
             function updateCarousel() {
                 carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
                 
-                // Update controls
+                // controles de actualizacion
                 controls.forEach((control, index) => {
                     if(index === currentIndex) {
                         control.classList.add('active');
